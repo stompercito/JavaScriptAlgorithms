@@ -1,0 +1,42 @@
+Dada una serie de letras conocidas como diccionario y un código que dice cuales caracteres del diccionario forman una palabra. Se desea convertir esos números en las letras y observar la palabra que representan.
+
+Ejemplo:  diccionario de palabras  A V L E H O
+          indices: 4 5 2 0         0 1 2 3 4 5
+          resultado = HOLA
+          
+
+En este ejemplo la letra A = 0, V = 1, L=2, E=3, H=4, O=5, 
+por lo que si se reciben los indices 4520, se quiere el 4=H,5=O,2=L,0=A 
+este código 4520 significa HOLA
+---
+Input Format
+
+O N R T Y V W I Q D B A C D G P Q S O  //diccionario 
+9 11 17 6                               //indices
+dado que son 2 reglones se recomienda usar input.split('\n');  esto crea un arreglo con 2 elementos uno por cada renglon, por cada elemento se puede usar split.(' ');
+----
+Constraints
+
+Puede haber letras repetidas e indices repetidos, pero los indices no pueden ser mayores a la cantidad de elementos en el diccionario.
+----
+Output Format
+
+DASW //9=D, 11=A, 17=S, 6=w
+----
+Sample Input 0
+
+O N R T Y V W I Q D B A C D G P Q S O
+9 11 17 6
+----
+Sample Output 0
+
+DASW
+----
+Sample Input 1
+
+Y F Y C E J Q W V P W Y P F W B D
+3 13 10 11 0 2 9 16 3
+----
+Sample Output 1
+
+CFWYYYPDC

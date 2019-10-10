@@ -1,0 +1,79 @@
+Se recibirá un listado de valores separados por espacio, se desea que primero se muestren los números y luego las cadenas de texto. Deben enlistarse en el orden como aparecen en la cadena de entrada. 
+----
+1 hola 3 a2 hola4 2
+----
+salida:
+1
+3
+2
+hola
+a2
+hola4
+----
+Input Format
+
+1 2 34 hola texto2 texto3 1.34 //texto separado por espacio usar input.split(' ')
+----
+Constraints
+
+solo serán números y textos
+----
+Output Format
+
+1 // primero los números y después  los textos 
+2
+34
+1.34
+hola
+texto2
+texto3
+----
+Sample Input 0
+
+-34 93 text2 text3 38 -45 text6 -22 54 51 -75 58 text12 -56 -100
+----
+Sample Output 0
+
+-34
+93
+38
+-45
+-22
+54
+51
+-75
+58
+-56
+-100
+text2
+text3
+text6
+text12
+----
+Explanation 0
+
+números primero y después los textos
+----
+Sample Input 1
+
+-25 23 -37 9 90 text5 text6 6 text8 -70 -68 text11 -22 text13 text14 text15 text16
+----
+Sample Output 1
+
+-25
+23
+-37
+9
+90
+6
+-70
+-68
+-22
+text5
+text6
+text8
+text11
+text13
+text14
+text15
+text16
