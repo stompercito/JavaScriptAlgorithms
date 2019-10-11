@@ -1,0 +1,58 @@
+De una tabla de datos de alumnos
+
+Crear un arreglo de objetos y añadir el atributo boleano "aprobado" (true/false)
+Crear una función con posibilidad de filtrar por sexo o por aprobado (aprobados y reprobados) o por cualquier otra propiedad o combinación de propiedades.
+Mostrar los expedientes de los elementos filtrados
+----
+Input Format
+
+5,3  // número de alumnos, número de filtros
+nombre,ciudad,calificacion,sexo,expediente //nombres de propiedades
+Juan Pérez,Zapopan,9.4,H,123
+María López,Guadalajara,9.7,M,234
+Mar Doe,Zapopan,5.9,M,353
+Jorge Zrt,Zapopan,5.4,H,158
+John Loo,Zapopan,7.4,H,134
+sexo,H  //propiedad valor
+ciudad,Zapopan
+aprobado true
+----
+Constraints
+
+Existirá siempre un atributo expediente y un atributo calificacion (sin acento).
+
+----
+Output Format
+
+123,134
+----
+Sample Input 0
+
+5,2
+nombre,calificacion,sexo,ciudad,expediente
+Marcos Trab,5.5,H,Guadalajara,165
+Eula Perry,5.8,M,Zapopan,375
+Antonio Clayton,8.9,H,Zapopan,197
+Mary Alexander,7.7,M,Guadalajara,210
+Mar Wewar,9.7,M,Zapopan,310
+sexo,H
+aprobado,true
+----
+Sample Output 0
+
+197
+----
+Sample Input 1
+
+5,1
+nombre,calificacion,sexo,ciudad,expediente
+Marcos Trab,5.5,H,Guadalajara,165
+Eula Perry,5.8,M,Zapopan,375
+Antonio Clayton,8.9,H,Zapopan,197
+Mary Alexander,7.7,M,Guadalajara,210
+Mar Wewar,9.7,M,Zapopan,310
+sexo,H
+----
+Sample Output 1
+
+165,197
